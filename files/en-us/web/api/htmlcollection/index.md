@@ -11,11 +11,11 @@ The **`HTMLCollection`** interface represents a generic collection (array-like o
 
 An `HTMLCollection` in the HTML DOM is live; it is automatically updated when the underlying document is changed. For this reason it is a good idea to make a copy (e.g., using {{jsxref("Array/from", "Array.from")}}) to iterate over if adding, moving, or removing nodes.
 
-This interface is called `HTMLCollection` for historical reasons, because before the modern DOM, collections implementing this interface could only have HTML elements as their items.
+This interface is called `HTMLCollection` for historical reasons, because before the modern DOM, collections implementing this interface could only have HTML elements their items.
 
 This interface was an [attempt to create an unmodifiable list](https://stackoverflow.com/questions/74630989/why-use-domstringlist-rather-than-an-array/74641156#74641156) and only continues to be supported to not break code that's already using it. Modern APIs represent list structures using types based on JavaScript [arrays](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), thus making many array methods available, and at the same time imposing additional semantics on their usage (such as making their items read-only).
 
-These historical reasons do not mean that you as a developer should avoid `HTMLCollection`. You don't create `HTMLCollection` objects yourself, but you get them from APIs such as {{domxref("Document.getElementsByClassName()")}}, and these APIs are not deprecated. However, be careful of the semantic differences from a real array.
+These historical reasons do not mean that you as a developer should avoid `HTMLCollection`. You don't create `HTMLCollection` objects yourself, but you get them from APIs such as {{domxref("Document.getElementsByClassName()")}} and {{domxref("Document.children")}}, and these APIs are not deprecated. However, be careful of the semantic differences from a real array.
 
 ## Instance properties
 
