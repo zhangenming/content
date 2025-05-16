@@ -74,7 +74,7 @@ grid-column-start: some-grid-area 4;
 /* span + <integer> + <custom-ident> values */
 grid-column-start: span 3;
 grid-column-start: span some-grid-area;
-grid-column-start: span some-grid-area 5;
+grid-column-start: 5 span some-grid-area;
 
 /* Global values */
 grid-column-start: inherit;
